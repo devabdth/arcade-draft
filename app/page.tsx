@@ -1,6 +1,6 @@
 "use client"
 import { HeroSection, ProgramsSection, StoreSection,
-         EpisodesSection, PartnersSection, FounderSection } from "@/components/home";
+         EpisodesSection, FounderSection } from "@/components/home";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 export default function Home() {
@@ -12,7 +12,6 @@ export default function Home() {
         <ProgramsSection />
         <StoreSection />
         <EpisodesSection />
-        <PartnersSection />
         <FounderSection />
     </main>
   );
