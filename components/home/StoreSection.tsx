@@ -12,7 +12,7 @@ const StoreSection= () => {
             <p className="text-xl font-secondary text-secondary font-regular">Essential Tools to remember us everywhere!</p>
             <div className="w-full h-full flex flex-row items-center justify-between gap-4 my-[2vh]">
                 {Products.map((product, i) => (
-                        <div key={i} className="w-full h-full relative rounded-xl overflow-hidden shadow-orange-500/25 shadow-xl">
+                        <div key={i} className="w-full h-full relative rounded-xl overflow-hidden shadow-orange-600/25 shadow-xl">
                             <div className="w-full h-full absolute bg-[#272727] top-0"></div>
                             <Image
                                 alt="Product Card Background" src="/product-background.png"
