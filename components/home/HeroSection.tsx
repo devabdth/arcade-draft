@@ -89,7 +89,7 @@ const HeroSection= () => {
                     </div>
                 </div>
                 <div className="w-[40%] h-[2px] bg-primary rounded-full absolute top-[50%] -translate-y-[50%] right-8"></div>
-                <div className="w-[53%] h-full absolute top-[80vh] left-0 border-[2px] border-primary rounded-3xl overflow-hidden" ref={snippetOneParallax.ref}>
+                <div className="w-[53%] h-full absolute top-[72vh] left-0 border-[2px] border-primary rounded-3xl overflow-hidden" ref={snippetOneParallax.ref}>
                     {channels.map((channel, i) => (
                         <Link key={i} href={channel.link} className={`w-full h-[10vh] flex flex-row items-center justify-between gap-2 px-2 ${ i!== 2&& "border-b-2 border-secondary/10"}
                         transition-all backdrop-blur-sm bg-background/25 hover:bg-secondary/10
