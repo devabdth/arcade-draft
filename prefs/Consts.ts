@@ -49,3 +49,44 @@ export const channels= [
         link: "https://www.youtube.com/channel/UCFo0CfTq0pr7R920LZtdd0Q",
     }
 ];
+
+export const Products= [
+    {
+        title: "Blue Bracelet",
+        description: "The Bracelet from Raz3 El-Gomhour Event in Jan 05, 2024 (Blue Edition)",
+        previousPrice: "50.00EGP",
+        image: "/product_one.png",
+        newPrice: "40.00EGP",
+    },
+    {
+        title: "Orange Bracelet",
+        description: "The Bracelet from Raz3 El-Gomhour Event in Jan 05, 2024 (Orange Edition)",
+        previousPrice: "50.00EGP",
+        image: "/product_two.png",
+        newPrice: "40.00EGP",
+    },
+    {
+        title: "El-Razee3a Package",
+        description: "All you need to become a \"Razee3\": A Coffee Mug, Key Chain, and Special Bracelet",
+        previousPrice: "220.00EGP",
+        image: "/product_three.png",
+        newPrice: "180.00EGP",
+    },
+    {
+        title: "Erza3 Key Chain",
+        description: "To be with you wherever you go, But Our Logo in your keys!",
+        previousPrice: "80.00EGP",
+        image: "/product-four.png",
+        newPrice: "50.00EGP",
+    },
+
+    {
+        title: "Raz3 El-Gomhour Mug",
+        description: "For a better experience when you're watching Raz3 El-Gomhour",
+        previousPrice: "150.00EGP",
+        image: "/product_five.png",
+        newPrice: "120.00EGP",
+    },
+
+
+];
