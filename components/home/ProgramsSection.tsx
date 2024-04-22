@@ -7,22 +7,22 @@ import { DefaultButton } from "../globals";
 const ProgramsSection= () => {
     return (
         <section className="w-full lg:h-[90vw] md:h-[120vw] h-[330vw] flex relative font-secondary">
-            <Image className="h-full w-[40%] absolute left-0 top-0 rotate-180 object-fill object-top" src="/programs-light.png" alt="Neon Light" width={964} height={1258}>
+            <Image className="h-full w-[40%] absolute left-0 top-0 rotate-180 object-fill object-top hue-rotate-180" src="/programs-light.png" alt="Neon Light" width={964} height={1258}>
             </Image>
-            <Image className="h-full w-[40%] absolute left-0 top-0 rotate-180 object-fill object-top hue-rotate-90" src="/programs-light.png" alt="Neon Light" width={964} height={1258}>
+            <Image className="h-full w-[40%] absolute left-0 top-0 rotate-180 object-fill object-top hue-rotate-180" src="/programs-light.png" alt="Neon Light" width={964} height={1258}>
             </Image>
-           <Image className="h-full w-[40%] absolute right-0 top-0 object-fill object-top" src="/programs-light.png" alt="Neon Light" width={964} height={1258}>
+           <Image className="h-full w-[40%] absolute right-0 top-0 object-fill hue-rotate-30 object-top" src="/programs-light.png" alt="Neon Light" width={964} height={1258}>
             </Image>
-           <Image className="h-full w-[40%] absolute right-0 top-0 hue-rotate-90 object-fill object-top" src="/programs-light.png" alt="Neon Light" width={964} height={1258}>
+           <Image className="h-full w-[40%] absolute right-0 top-0 hue-rotate-30 object-fill object-top" src="/programs-light.png" alt="Neon Light" width={964} height={1258}>
             </Image>
-            <div className="w-full h-full flex flex-col justify-start lg:gap-4 md:gap-2 gap-4 items-center lg:px-28 xl:px-56 lg:py-14 md:px-8 md:py-4 px-4 py-2 top-0 absolute">
+            <div className="w-full h-full flex flex-col justify-start lg:gap-4 md:gap-2 gap-4 items-center lg:px-28 xl:px-28 lg:py-14 md:px-8 md:py-4 px-4 py-2 top-0 absolute">
                 <h2 className="text-white lg:bold-40 bold-52 text-center text-5xl font-primary">Featured Programs</h2>
                 <p className="text-white/50 regular-12 text-center">Our Must-See Programs</p>
                 <div className="w-full lg:h-[40%] md:h-[50%] h-[33%] flex flex-row border-[1px] border-white/50 rounded-xl relative overflow-hidden bg-gray-20/10 backdrop-blur-2xl">
                     <div className="w-full h-full top-0 left-0 relative">
                         <div className="w-full h-full absolute">
                             <Image
-                                src="/about-home-gradient.png" alt="Gradient Neon Light"
+                                src="/hero-light.png" alt="Gradient Neon Light"
                                 width={1417} height={1417}
                                 className="w-[140%] h-[140%] lg:w-[110%] lg:h-[110%] object-center object-cover absolute -top-[20%] lg:-top-[10%] lg:-left-[10vw] hue-rotate-90 blur-2xl opacity-25"
                             ></Image>
