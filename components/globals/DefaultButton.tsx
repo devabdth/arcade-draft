@@ -3,7 +3,7 @@ import React from "react";
 type DefaultButtonProps= {
     title: string;
     variant: string;
-    onClick: ()=> {};
+    onClick: ()=> void;
 }
 export default (props: DefaultButtonProps) => {
     return (
