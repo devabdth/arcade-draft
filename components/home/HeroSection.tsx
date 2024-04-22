@@ -60,7 +60,7 @@ const HeroSection= () => {
                  ></Image>
             </div>
             <div className="w-full h-[30%] flex items-center justify-center absolute top-[10vh] flex-col px-28 gap-4">
-                <h1 className="font-black text-7xl font-primary text-center">
+                <h1 className="font-black text-6xl font-primary text-center">
                     <span className="text-3xl font-regular font-secondary tracking-[1vw]">A world of films!</span><br/>
                     Step into the <span className="inline-block relative">
                         Arcade
