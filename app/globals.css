@@ -2,6 +2,136 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Sukplena Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sukplena Roman"), url("../fonts/Sukplena/SukplenaPS.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sukplena Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sukplena Oblique"), url("../fonts/Sukplena/SukplenaPSObl 2.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sukplena Lt Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sukplena Lt Light"), url("../fonts/Sukplena/SukplenaPSLt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sukplena Lt LightOblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sukplena Lt LightOblique"),
+    url("../fonts/Sukplena/SukplenaPSLtObl.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sukplena Bd Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sukplena Bd Bold"), url("../fonts/Sukplena/SukplenaPSBd.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Sukplena Bd BoldOblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Sukplena Bd BoldOblique"),
+    url("../fonts/Sukplena/SukplenaPSBdObl.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur"), url("../fonts/Robotaur/robotaur.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur 3D";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur 3D"),
+    url("../fonts/Robotaur/robotaur3d.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur Academy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur Academy"),
+    url("../fonts/Robotaur/robotaura.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur Expanded";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur Expanded"),
+    url("../fonts/Robotaur/robotaure.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur Leftalic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur Leftalic"),
+    url("../fonts/Robotaur/robotaurleft.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur Condensed"),
+    url("../fonts/Robotaur/robotaurc.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur 3D Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur 3D Italic"),
+    url("../fonts/Robotaur/robotaur3di.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur Academy Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur Academy Italic"),
+    url("../fonts/Robotaur/robotaurai.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur Condensed Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur Condensed Italic"),
+    url("../fonts/Robotaur/robotaurci.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur Expanded Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur Expanded Italic"),
+    url("../fonts/Robotaur/robotaurei.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Robotaur Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Robotaur Italic"),
+    url("../fonts/Robotaur/robotauri.woff") format("woff");
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -26,8 +156,72 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.text-gradient-fill {
+  background: linear-gradient(
+    90deg,
+    #D73AB5 14.2857%,
+    #4D2992 28.5714%,
+    #22BDE3 42.85714%,
+    #73CC41 57.1428%,
+    #E1CE26 71.4285%,
+    #EA942B 85.7142%,
+    #D51314 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@keyframes planet-keyframe {
+    0% {
+        transform: translateX(-50%) translateY(-55%) rotate(0);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-55%) rotate(360deg);
+    }
+}
+#globe::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+    animation: planet-keyframe infinite linear 10s;
+}
+
+@layer base {
+  html {
+    font-family: "Robotaur", "Sukplena Roman";
+    scroll-behavior: smooth;
+  }
+
+  body, section {
+    background-color: #111111;
+  }
+}
+
 @layer utilities {
+    .bg-gradient {
+  background: #22BDE3;
+
+    }
   .text-balance {
     text-wrap: balance;
+  }
+
+  .text-gradient {
+      @apply text-gradient-fill
+  }
+  .planet-rotation {
+      animation: planet-keyframe infinite 60s linear;
+  }
+
+  .absolute-center {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 }
