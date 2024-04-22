@@ -87,6 +87,53 @@ export const Products= [
         image: "/product_five.png",
         newPrice: "120.00EGP",
     },
+];
 
 
+export const Episodes= [
+    {
+        title: "Exclusive tour to unveil the new capital stadium before the start of the Egypt national team",
+        description: "If you liked the episode, don't forget to like, share, join the Al Razzieh family and subscribe to our channel.",
+        link: "https://www.youtube.com/watch?v=MyjqKzxNaaQ",
+        views: "298K Views",
+        channelName: "Erz3",
+        thumbnail: "/thumbnail-one.jpg",
+        channel: "/chOne.jpg",
+    },
+    {
+        title: "The lesson is over, you idiot | A story of failure and frustration after a week in which we lost everything ❌ | Raz' Al-Jomhour Podcast",
+        description: "If you liked the episode, don't forget to like, share, join the Al Razzieh family and subscribe to our channel.",
+        link: "https://www.youtube.com/watch?v=FbyZ0djk79U",
+        views: "419K Views",
+        channelName: "Erz3",
+        thumbnail: "/thumbnail-two.jpg",
+        channel: "/chOne.jpg",
+    },
+    {
+        title: "Lucky Real Madrid fans  Barcelona fans are devastated  Real Madrid reaction 2/3 Barcelona | End of the league",
+        description: "If you liked the episode, don't forget to like, share, join the Al Razzieh family and subscribe to our channel.",
+        link: "https://www.youtube.com/watch?v=HV3Zku8XacE",
+        views: "148K Views",
+        channelName: "Erz3",
+        thumbnail: "/thumbnail-three.jpg",
+        channel: "/chOne.jpg",
+    },
+    {
+        title: "Casino El'Alaab - S4E8 | Amr Nsoo7y & Omar Mar'3i",
+        description: "If you liked the episode, don't forget to like, share, join the Al Razzieh family and subscribe to our channel.",
+        link: "https://www.youtube.com/watch?v=j18Beq7bADI",
+        views: "1.5M Views",
+        channelName: "Marwan Serry",
+        thumbnail: "/thumbnail-four.jpg",
+        channel: "/chTwo.jpg",
+    },
+    {
+        title: "Eid Al-Fitr 2024 Movie Revenues | A Movie Breaks Records",
+        description: "If you liked the episode, don't forget to like, share, join the Al Razzieh family and subscribe to our channel.",
+        link: "https://www.youtube.com/watch?v=lUcR0vwRCdw",
+        views: "77K Views",
+        channelName: "Beta3 Aflam",
+        thumbnail: "/thumbnail-five.jpg",
+        channel: "/chThree.jpg",
+    },
 ];
